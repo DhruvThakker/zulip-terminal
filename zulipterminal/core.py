@@ -91,8 +91,11 @@ class ZulipController:
                                                     narrow=True,
                                                     id=button.message['id'])
             focus_msg += 1
+<<<<<<< refs/remotes/zulip/master
             if len(w_list) == 1:
                 focus_msg = 0
+=======
+>>>>>>> core: Set the pointer to the same message after narrowing.
         else:
             w_list, focus_msg = create_msg_box_list(messages, self.model,
                                                     narrow=True)
@@ -135,7 +138,11 @@ class ZulipController:
         self.model.msg_view.clear()
         msg_list = itertools.chain.from_iterable(self.model.messages.values())
         w_list, focus_msg = create_msg_box_list(msg_list, self.model)
+<<<<<<< refs/remotes/zulip/master
         if hasattr(button, 'message') and self.model.narrow != []:
+=======
+        if hasattr(button, 'message'):
+>>>>>>> core: Set the pointer to the same message after narrowing.
             focus_msg += 1
         self.model.msg_view.extend(w_list)
         self.model.msg_list.set_focus(focus_msg)
