@@ -18,6 +18,7 @@ class ZulipView(urwid.WidgetWrap):
     """
     palette = {
         'default': [
+<<<<<<< refs/remotes/zulip/master
                 (None,           'light gray',    'black'),
                 ('selected',     'light magenta', 'dark blue'),
                 ('msg_selected', 'light red',     'black'),
@@ -28,6 +29,18 @@ class ZulipView(urwid.WidgetWrap):
                 ('unread',       'black',         'light gray'),
                 ('active',       'white',         'black'),
                 ('idle',         'yellow',        'black')
+=======
+                (None,           'light gray',   'black'),
+                ('selected',     'light magenta','dark blue'),
+                ('msg_selected', 'light red',    'black'),
+                ('header',       'dark cyan',    'dark blue',  'bold'),
+                ('custom',       'white',        'dark blue',  'underline'),
+                ('content',      'white',        'black',      'standout'),
+                ('name',         'yellow',       'black'),
+                ('unread',       'black',        'light gray'),
+                ('active',       'white',        'black'),
+                ('idle',         'yellow',       'black')
+>>>>>>> UI: Show different colors for offline/online users.
                 ],
         'light': [
                 (None,           'black',        'white'),
