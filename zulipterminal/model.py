@@ -136,6 +136,7 @@ class ZulipModel(object):
         # store the relevant info for a user in Dict[Dict[str, Any]] format.
         for user in users:
             user_dict[user['email']] = {
+<<<<<<< HEAD
 <<<<<<< refs/remotes/zulip/master
                 'full_name': user['full_name'],
                 'email': user['email'],
@@ -145,6 +146,11 @@ class ZulipModel(object):
                 'email' : user['email'],
                 'status' : 'idle',
 >>>>>>> UI: Show different colors for offline/online users.
+=======
+                'full_name' : user['full_name'],
+                'email' : user['email'],
+                'status' : 'idle',
+>>>>>>> master
             }
         # The to display
         user_list = list()
@@ -165,11 +171,15 @@ class ZulipModel(object):
         # add the remaining users to the list.
         user_list += sorted(user_dict.values(),
                             key=lambda u: u['full_name'].lower(),
+<<<<<<< HEAD
 <<<<<<< refs/remotes/zulip/master
                             )
 =======
                     )
 >>>>>>> UI: Show different colors for offline/online users.
+=======
+                    )
+>>>>>>> master
         return user_list
 
     def get_subscribed_streams(self) -> List[List[str]]:

@@ -40,7 +40,10 @@ class ZulipView(urwid.WidgetWrap):
                 ('unread',       'black',        'light gray'),
                 ('active',       'white',        'black'),
                 ('idle',         'yellow',       'black')
+<<<<<<< HEAD
 >>>>>>> UI: Show different colors for offline/online users.
+=======
+>>>>>>> master
                 ],
         'light': [
                 (None,           'black',        'white'),
